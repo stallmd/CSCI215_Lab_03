@@ -21,7 +21,7 @@ function calculate() {
     // Todo: Perform conversion calculations here
     var weightCalc = (weight * 0.454);
     var meterCalc = (height * 0.0254);
-    var centCalc = (height * 0.454);
+    var centCalc = (height * 2.54);
 
     // -------------------------------
     // Body Surface Area (BSA)
@@ -61,7 +61,7 @@ function calculate() {
     // ==========================================
     // Todo: Perform BMI calculation here
 
-    BMI = weight / Math.pow(meterCalc,2);
+    BMI = weightCalc / Math.pow(meterCalc, 2);
 
 
     // Do not modify this function call
